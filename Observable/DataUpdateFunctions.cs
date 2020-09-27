@@ -22,7 +22,7 @@ namespace Observable
             int i = 0;
             while (true)
             {
-                await Task.Delay(500);
+                await Task.Delay(500); 
                 //Debug.WriteLine("inside UpdateDataCANTrace");
                 i++;
                 var Countries_temp = Application.Current.Resources["CountriesResource"] as ObservableCollection<Country>;
