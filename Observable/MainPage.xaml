@@ -35,16 +35,7 @@
             </GridView.ItemTemplate>
         </GridView>
 
-        <GridView Grid.Row="1" x:Name="GridViewCities">
-            <GridView.ItemTemplate>
-                <DataTemplate x:DataType="local:City">
-                    <StackPanel>
-                        <TextBlock Text="{x:Bind Name}" />
-                        <TextBlock Text="{x:Bind TEMPERATURE}" />
-                    </StackPanel>
-                </DataTemplate>
-            </GridView.ItemTemplate>
-        </GridView>
+        
 
     </Grid>
 </Page>

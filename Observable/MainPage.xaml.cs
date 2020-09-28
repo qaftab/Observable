@@ -49,14 +49,7 @@ namespace Observable
             CountriesResource.Add(new Country { CountryName = "USA", CITIES = USACityCollection });
             CountriesResource.Add(new Country { CountryName = "UK", CITIES = UKCityCollection });
 
-            Countries_code_collection = new ObservableCollection<Country>();
-            Countries_code_collection.Add(new Country { CountryName = "Canada", CITIES = CanadaCityCollection });
-            Countries_code_collection.Add(new Country { CountryName = "USA", CITIES = USACityCollection });
-            Countries_code_collection.Add(new Country { CountryName = "UK", CITIES = UKCityCollection });
-
-            //GridViewCountries.ItemsSource = Countries_code_collection;
-            //GridViewCities.ItemsSource = CountriesResource[0].CitiesInCountry;
-            GridViewCities.ItemsSource = CountriesResource[0].CITIES;
+                            
             //added Sept 25 2020
             DataUpdates = new Thread(new ThreadStart(DataUpdateFunctions.Initialize().Wait));
             DataUpdates.Start();
